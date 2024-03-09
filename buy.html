@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>license</title>
+    <title>Buy License</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <a class="navbar-brand w-100" href="#"><img src="assets/img/logo/logo.png" alt="" srcset=""></a>
+            <a class="navbar-brand w-100" href="index.html"><img src="assets/img/logo/logo.png" alt="" srcset=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,96 +21,102 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="buy.html">Buy License</a>
+                    <a class="nav-link" href="#">Buy License</a>
                     <a class="nav-link" href="#">Sell License</a>
                 </div>
             </div>
         </div>
     </nav>
-
     <!-- ================================
-        banner part starts from here
+        buy banner part starts from here
     ================================= -->
 
-    <div class="banner">
-        <div class="row">
-            <div class="col-lg-12 col-12">
-                <div id="carouselExampleCaptions" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                    </div>
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
-                        <div class="carousel-inner">
-                            <div class="verticle carousel-item active">
-                                <div class="nai d-flex align-items-center justify-content-center">
-                                    <div class="banner_content">
-                                        <h1>Best license service ever</h1>
-                                        <button class="primary-btn"><a href="#">Sell</a></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="verticle2 carousel-item">
-                                <div class="nai d-flex align-items-center justify-content-center">
-                                    <div class="banner_content">
-                                        <h1>Best license service<br> ever in USA</br></h1>
-                                        <button class="primary-btn"><a href="#">Buy</a></button>
-                                    </div>
-                                </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+    <section class="buy_banner">
+        <div class="container">
+            <h3> Wanna Buy Your License?</h3>
         </div>
-    </div>
+    </section>
+
+
 
     <!-- ================================
-        about part starts from here
+        buy form part starts from here
     ================================= -->
 
-    <section class="about">
+    <section class="buy">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>About Us</h2>
-                </div>
-                <div class="col-lg-12">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rerum voluptas, expedita a
-                        ipsum ad quia dolorem autem maxime. Reiciendis? Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Temporibus rerum voluptas, expedita a
-                        ipsum ad quia dolorem autem maxime. Reiciendis? Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Temporibus rerum voluptas, expedita a
-                        ipsum ad quia dolorem autem maxime. Reiciendis?</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="about_image">
-                        <img src="assets/img/about/license-1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="about_image">
-                        <img src="assets/img/about/license-2.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="about_image">
-                        <img src="assets/img/about/license-3.png" alt="">
+                    <div class="buy_form">
+                        <h3 class="text-center">Buy License</h3>
+                        <p class="text-center">Please fill out the license and contact information below and a dedicated
+                            agent will contact
+                            you within 24 hours for your FREE consultation!</p>
+
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="Type of License*" class="form-label">Type of License*</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>Full Liquor</option>
+                                    <option>Beer and Wine</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="Type of License*" class="form-label">Type of Business*</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>Bar / Restaurant</option>
+                                    <option>Liquor Store</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="Type of License*" class="form-label">Control of Property*</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                    <option>Negotiating</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">Country</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label">State</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>Arkansas</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">First Name*</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone*</label>
+                                <input type="number" class="form-control" id="name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email*</label>
+                                <input type="email" class="form-control" id="name">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="text" class="form-label">Description(optional)</label>
+                                <textarea class="form-control" id="description" rows="3"></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="submit_btn">Buy License</button>
+                                <!-- <button class="primary-btn"><a href="#">Buy</a></button> -->
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
