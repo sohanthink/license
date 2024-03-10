@@ -455,7 +455,7 @@ img {
   }
   .contact .contact_main h5 {
     padding: 0;
-    font-size: 26px;
+    font-size: 21px;
   }
   .footer .left {
     display: flex;
@@ -466,6 +466,9 @@ img {
   .footer .left p {
     padding: 0 32px;
     text-align: center;
+  }
+  .footer ul {
+    padding: 0 !important;
   }
   .navbar-nav {
     background: #fd6040;
@@ -482,5 +485,13 @@ img {
   }
   .buy .buy_form p {
     padding: 10px;
+  }
+  .about p {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  .about h2 {
+    text-align: center;
   }
 }
