@@ -346,6 +346,7 @@ img {
 }
 .contact .contact_card p {
   font-size: 20px;
+  text-align: center;
 }
 /* ==================================
 ======== footer css starts from here
@@ -393,6 +394,7 @@ img {
 /* ==================================
 ======== buy page  css starts from here
 ================================== */
+
 .buy_banner {
   padding: 200px 0;
   margin-bottom: 50px;
@@ -433,4 +435,52 @@ img {
 .submit_btn:hover {
   background-color: rgb(23, 0, 0);
   color: white;
+}
+
+/* ==================================
+======== responsive css starts from here
+================================== */
+
+@media (max-width: 575.98px) {
+  .banner .carousel-inner .banner_content h1 {
+    font-size: 40px;
+    padding: 50px;
+  }
+  .about .about_image {
+    margin-bottom: 20px;
+  }
+  .contact .contact_main h3 {
+    padding: 10px;
+    font-size: 40px;
+  }
+  .contact .contact_main h5 {
+    padding: 0;
+    font-size: 26px;
+  }
+  .footer .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .left p {
+    padding: 0 32px;
+    text-align: center;
+  }
+  .navbar-nav {
+    background: #fd6040;
+    text-align: center;
+  }
+  .buy_banner h3 {
+    font-size: 30px;
+  }
+  .buy .buy_form {
+    background-color: #fc6140;
+    padding: 50px 25px;
+    border-radius: 5px;
+    margin: 0;
+  }
+  .buy .buy_form p {
+    padding: 10px;
+  }
 }
