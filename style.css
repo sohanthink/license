@@ -226,7 +226,7 @@ img {
 ================================== */
 
 .banner .verticle {
-  height: 90vh;
+  height: 65vh;
   width: 100%;
   background-image: url(assets/img/home/banner-2.png);
   background-size: cover;
@@ -240,7 +240,7 @@ img {
 }
 
 .banner .verticle2 {
-  height: 90vh;
+  height: 65vh;
   width: 100%;
   background-image: url(assets/img/home/license\ banner.png);
   background-size: cover;
@@ -261,7 +261,6 @@ img {
   font-size: 70px;
   font-weight: 700;
   color: white;
-  text-transform: capitalize;
   padding-bottom: 20px;
 }
 
@@ -349,6 +348,25 @@ img {
   text-align: center;
 }
 /* ==================================
+======== licensed css starts from here
+================================== */
+
+.licensed {
+  background-image: url(assets/img/home/licensed.png);
+  background-attachment: fixed;
+  color: white;
+  object-fit: cover;
+  margin: 50px 0;
+}
+.licensed h3 {
+  font-size: 60px;
+  font-weight: 700;
+  padding: 200px 0;
+  text-align: center;
+  background-color: #0000004a;
+}
+
+/* ==================================
 ======== footer css starts from here
 ================================== */
 
@@ -371,6 +389,9 @@ img {
 }
 .footer ul {
   text-align: center;
+}
+.footer .right ul {
+  line-height: 30px;
 }
 
 .footer .middle ul li {
@@ -407,7 +428,7 @@ img {
   font-weight: 800;
 }
 .buy .buy_form {
-  background-color: #fc6140;
+  background-color: #eee6f4;
   padding: 50px 100px;
   margin: 50px;
   border-radius: 5px;
