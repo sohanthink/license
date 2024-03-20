@@ -225,49 +225,49 @@ img {
 ======== banner css starts from here
 ================================== */
 
-.banner .verticle {
-  height: 65vh;
+.banner .main {
   width: 100%;
-  background-image: url(assets/img/home/banner-2.png);
+  height: 500px;
+  background-image: url(./assets/img/home/license\ banner.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.banner .verticle .nai {
-  background-color: rgb(58 79 60 / 56%);
-  height: 100%;
-  width: 100%;
+.banner .main .content {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fe603fd4;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
 }
-
-.banner .verticle2 {
-  height: 65vh;
-  width: 100%;
-  background-image: url(assets/img/home/license\ banner.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+.banner .main .content p {
+  font-size: 20px;
+  color: white;
 }
-
-.banner .verticle2 .nai {
-  background-color: rgb(58 79 60 / 56%);
-  height: 100%;
-  width: 100%;
-}
-
-.banner .carousel-inner .banner_content {
+.banner .main .content h3 {
+  font-size: 40px;
+  color: white;
+  font-family: var(--secondary-font);
+  font-weight: 700;
   text-align: center;
 }
-
-.banner .carousel-inner .banner_content h1 {
-  font-size: 70px;
-  font-weight: 700;
-  color: white;
-  padding-bottom: 20px;
+.banner .main .content button {
+  color: #1b1b1b;
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  transition: all linear 0.4s;
+  margin: 10px;
 }
-
-.banner .carousel-inner .banner_content p {
-  font-size: 30px;
-  font-weight: 500;
+.banner .main .content button:hover {
   color: white;
+  background-color: #1b1b1b;
 }
 
 /* ==================================
@@ -275,7 +275,7 @@ img {
 ================================== */
 
 .about {
-  padding: 50px 0;
+  padding: 100px 50px;
 }
 .about .about_image {
   width: 100%;
@@ -285,11 +285,24 @@ img {
   font-size: 55px;
   font-weight: 800;
   color: var(--primary-color);
+  margin-bottom: 50px;
+  font-family: var(--secondary-font);
+}
+.about h3 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fc6140;
+  border: 0.5px solid #fc6140;
+  padding: 8px;
+  border-radius: 25px;
+  display: inline-block;
+  margin: 5px 0px 25px 0px;
 }
 .about p {
   font-size: 20px;
   color: var(--primary-color);
   padding: 10px 0;
+  font-weight: 300;
 }
 .about .about_image img {
   width: 100%;
@@ -297,12 +310,15 @@ img {
   background-size: cover;
   height: 100%;
 }
+.about .content {
+  padding: 50px;
+}
 /* ==================================
 ======== contact css starts from here
 ================================== */
 
 .contact {
-  padding: 50px 0;
+  padding: 80px 0;
 }
 .contact .contact_main {
   display: flex;
@@ -311,18 +327,27 @@ img {
   align-items: center;
 }
 .contact .contact_main h6 {
+  font-size: 16px;
+  font-weight: 300;
   color: #fc6140;
+  border: 0.5px solid #fc6140;
+  padding: 8px;
+  border-radius: 25px;
+  display: inline-block;
+  margin: 5px 0px 25px 0px;
 }
 .contact .contact_main h3 {
   font-size: 70px;
   font-weight: 800;
   padding: 0 200px;
   text-align: center;
+  font-family: var(--secondary-font);
 }
 .contact .contact_main h5 {
   font-size: 30px;
   padding: 0 200px;
   text-align: center;
+  font-weight: 300;
 }
 .contact .contact_card {
   padding: 40px;
@@ -337,16 +362,184 @@ img {
   border-radius: 8px;
 }
 .contact .contact_card svg {
-  font-size: 40px;
+  font-size: 24px;
+  background: #fc6140;
+  padding: 20px;
+  border-radius: 50%;
+  color: white;
 }
 .contact .contact_card h5 {
   font-size: 30px;
   font-weight: 700;
 }
 .contact .contact_card p {
-  font-size: 20px;
+  font-size: 18px;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 500;
+}
+/* ==================================
+======== specialist css starts from here
+================================== */
+
+.specialist {
+  background-color: #342f43;
+  color: white;
+}
+.accordion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  gap: 16px;
+  transition: 0.3s;
+}
+
+.accordion:hover {
+  gap: 0;
+}
+
+.accordion li {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 95px;
+  border-radius: 50px;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.accordion li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.5);
+}
+
+.accordion li,
+.accordion li img,
+.accordion li .content,
+.accordion li .content span {
+  transition: 0.3s;
+}
+
+.accordion h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 45px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.accordion li .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: #fff;
+  padding: 15px;
+  background: #02022e;
+  background: linear-gradient(
+    0deg,
+    rgb(0 0 0 / 70%) 10%,
+    rgb(255 255 255 / 0%) 100%
+  );
+  opacity: 0;
+  visibility: hidden;
+}
+
+.accordion li .content span {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 50px;
+  translate: -300px 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.accordion li:hover {
+  flex: 0 1 260px;
+  scale: 1.1;
+  z-index: 10;
+  opacity: 1;
+}
+
+.accordion li:hover .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.accordion li:hover span {
+  translate: -50% 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* testimonial section */
+
+.testimonial {
+  padding: 100px 0;
+}
+.testimonial h2 {
+  font-size: 55px;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-family: var(--secondary-font);
+}
+.testimonial h4 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fc6140;
+  border: 0.5px solid #fc6140;
+  padding: 8px;
+  border-radius: 25px;
+  display: inline-block;
+  margin: 5px 0px 50px 0px;
+}
+.testimonial .image-container {
+  position: relative;
+}
+
+.testimonial .image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.testimonial .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay color and opacity */
+}
+
+.testimonial .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
   text-align: center;
 }
+
+.testimonial .content h3 {
+  margin-bottom: 10px;
+}
+
+.testimonial .content p {
+  margin: 0;
+}
+
 /* ==================================
 ======== licensed css starts from here
 ================================== */
@@ -356,14 +549,25 @@ img {
   background-attachment: fixed;
   color: white;
   object-fit: cover;
-  margin: 50px 0;
+  overflow: hidden;
+  height: 500px;
 }
 .licensed h3 {
   font-size: 60px;
   font-weight: 700;
-  padding: 200px 0;
+  padding: 214px 0;
   text-align: center;
   background-color: #0000004a;
+  line-height: 50px;
+  font-family: var(--secondary-font);
+}
+.licensed h3 span {
+  font-size: 17px;
+  font-weight: 300;
+  color: #fc6140;
+  border: 0.5px solid #fc6140;
+  padding: 10px;
+  border-radius: 24px;
 }
 
 /* ==================================
@@ -432,14 +636,16 @@ img {
   padding: 50px 100px;
   margin: 50px;
   border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .buy .buy_form h3 {
   font-size: 40px;
   font-weight: 700;
+  font-family: var(--secondary-font);
 }
 .buy .buy_form p {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 300;
   padding: 10px 50px;
 }
 .form-select {
