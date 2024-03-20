@@ -241,7 +241,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fe603fd4;
+  background-color: #039403d1;
   flex-direction: column;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 5px;
@@ -291,8 +291,8 @@ img {
 .about h3 {
   font-size: 16px;
   font-weight: 300;
-  color: #fc6140;
-  border: 0.5px solid #fc6140;
+  color: #039403;
+  border: 0.5px solid #039403;
   padding: 8px;
   border-radius: 25px;
   display: inline-block;
@@ -329,8 +329,8 @@ img {
 .contact .contact_main h6 {
   font-size: 16px;
   font-weight: 300;
-  color: #fc6140;
-  border: 0.5px solid #fc6140;
+  color: #039403;
+  border: 0.5px solid #039403;
   padding: 8px;
   border-radius: 25px;
   display: inline-block;
@@ -363,7 +363,7 @@ img {
 }
 .contact .contact_card svg {
   font-size: 24px;
-  background: #fc6140;
+  background: #039403;
   padding: 20px;
   border-radius: 50%;
   color: white;
@@ -383,7 +383,7 @@ img {
 ================================== */
 
 .specialist {
-  background-color: #342f43;
+  background-color: #039403;
   color: white;
 }
 .accordion {
@@ -497,8 +497,8 @@ img {
 .testimonial h4 {
   font-size: 16px;
   font-weight: 300;
-  color: #fc6140;
-  border: 0.5px solid #fc6140;
+  color: #039403;
+  border: 0.5px solid #039403;
   padding: 8px;
   border-radius: 25px;
   display: inline-block;
@@ -564,8 +564,8 @@ img {
 .licensed h3 span {
   font-size: 17px;
   font-weight: 300;
-  color: #fc6140;
-  border: 0.5px solid #fc6140;
+  color: #039403;
+  border: 0.5px solid #039403;
   padding: 10px;
   border-radius: 24px;
 }
@@ -576,7 +576,8 @@ img {
 
 .footer {
   padding: 50px 0;
-  background-color: #1b1b1b;
+  background-color: #039403;
+  /* background-color: #1b1b1b; */
   color: white;
   margin-top: 30px;
 }
@@ -623,7 +624,8 @@ img {
 .buy_banner {
   padding: 200px 0;
   margin-bottom: 50px;
-  background-color: #1b1b1b;
+  /* background-color: #1b1b1b; */
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 }
 .buy_banner h3 {
   text-align: center;
@@ -632,11 +634,12 @@ img {
   font-weight: 800;
 }
 .buy .buy_form {
-  background-color: #eee6f4;
+  background-color: #039403;
   padding: 50px 100px;
   margin: 50px;
   border-radius: 5px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: white;
 }
 .buy .buy_form h3 {
   font-size: 40px;
