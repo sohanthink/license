@@ -218,7 +218,8 @@ img {
   white-space: nowrap;
 }
 .navbar .navbar-brand img {
-  width: 65px;
+  width: 280px;
+  padding: 10px 0;
 }
 
 /* ==================================
@@ -586,7 +587,7 @@ img {
   margin-bottom: 20px;
 }
 .footer .left .logo img {
-  height: 100%;
+  width: 100%;
 }
 .footer .head {
   font-size: 25px;
